@@ -19,8 +19,7 @@ jobs:
       - name: build and push to docker
         uses: docker/build-push-action@v5
         with:
-          context: ./devsu-demo-devops-nodejs
-          file: ./devsu-demo-devops-nodejs/Dockerfile
+          context: .
           push: true
           tags: |
             jgraziano/devsu-nodejs:latest
